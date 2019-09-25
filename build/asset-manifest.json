@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.js": "/static/js/main.7b51a4c1.chunk.js",
+    "main.js.map": "/static/js/main.7b51a4c1.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.52fd5621.js",
+    "runtime-main.js.map": "/static/js/runtime-main.52fd5621.js.map",
+    "static/js/2.1537776c.chunk.js": "/static/js/2.1537776c.chunk.js",
+    "static/js/2.1537776c.chunk.js.map": "/static/js/2.1537776c.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.f36d519d55b1af4a47d1eab7e32c055a.js": "/precache-manifest.f36d519d55b1af4a47d1eab7e32c055a.js",
+    "service-worker.js": "/service-worker.js",
+    "static/media/aspire.jpg": "/static/media/aspire.a1810c0e.jpg",
+    "static/media/background1.jpg": "/static/media/background1.07523011.jpg",
+    "static/media/chanterelles.png": "/static/media/chanterelles.4a14801c.png",
+    "static/media/chicago.jpg": "/static/media/chicago.404fdff7.jpg",
+    "static/media/cv.pdf": "/static/media/cv.2b1d24bc.pdf",
+    "static/media/foxgloves.png": "/static/media/foxgloves.eb1a980e.png",
+    "static/media/istanbul.png": "/static/media/istanbul.fed611bc.png",
+    "static/media/japan1.jpg": "/static/media/japan1.e8e83fcd.jpg",
+    "static/media/japan2.jpg": "/static/media/japan2.002a3e5f.jpg",
+    "static/media/japan3.jpg": "/static/media/japan3.6781630c.jpg",
+    "static/media/mountain.jpg": "/static/media/mountain.f8068f69.jpg",
+    "static/media/pincushions.png": "/static/media/pincushions.963823cb.png",
+    "static/media/toronto.jpg": "/static/media/toronto.2a3eb86f.jpg",
+    "static/media/untied.jpg": "/static/media/untied.8c33b735.jpg",
+    "static/media/watchbetter.jpg": "/static/media/watchbetter.3ed8c660.jpg"
+  }
+}
