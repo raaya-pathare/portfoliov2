@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Typing from 'react-typing-animation'
 import { Typography, Slide, Grid, Button, Icon, Tooltip, Fade } from '@material-ui/core'
-// import PropTypes from 'prop-types'
 
 import CV from '../files/cv.pdf'
 import { AboutStyles } from '../style/muiStyles'
@@ -56,9 +55,5 @@ const About = (props) => {
         </Grid>
     )
 }
-
-// About.propTypes = {
-//     name: PropTypes.object
-// }
 
 export default About
