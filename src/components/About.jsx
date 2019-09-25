@@ -18,7 +18,6 @@ const About = (props) => {
                     <Typing
                         hideCursor={true}
                         speed={120}>
-                        <Typing.Delay ms={1300} />
                         <Typography className={classes.aboutWord}>
                             about.
                         </Typography>
