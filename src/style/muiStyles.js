@@ -202,10 +202,8 @@ export const NavStyles = makeStyles(theme => ({
             flexDirection: 'row',
             width: '60vw'
         },
+        marginTop: '4px',
         justifyContent: 'space-between',
-        '& .MuiMenuItem-root': {
-            marginTop: '-25px',
-        },
     },
     menuItem: {
         fontFamily: 'Sorts Mill Goudy, serif',
