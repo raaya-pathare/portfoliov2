@@ -2,7 +2,7 @@
 import React from 'react'
 import { Grid, TextField, Button, Typography, withStyles, Slide, Box, IconButton } from '@material-ui/core'
 import * as emailjs from 'emailjs-com'
-import Typing from 'react-typing-animation'
+import Typist from 'react-typist'
 
 const styles = theme => ({
     root: {
@@ -180,11 +180,13 @@ class HigherOrderComponent extends React.Component {
                 <Grid container className={classes.root}>
                     <Grid container className={classes.content}>
                         <Grid item className={classes.headingContainer}>
-                                <Typing hideCursor={true} speed={120}>
-                                <Typography className={classes.heading}>
+                            <Typography className={classes.heading}>
+                                <Typist 
+                                    avgTypingDelay={130}
+                                    cursor={{ show: false }}>
                                     contact.
-                                </Typography>
-                                </Typing>
+                                </Typist>
+                            </Typography>
                             <Typography className={classes.subheading}>
                                     If you have a question, want to ask about a project or just want to say hello, don't hesitate to reach out.
                             </Typography>

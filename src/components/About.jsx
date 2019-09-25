@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Typing from 'react-typing-animation'
+// import Typing from 'react-typing-animation'
+import Typist from 'react-typist'
 import { Typography, Slide, Grid, Button, Icon, Tooltip, Fade } from '@material-ui/core'
 
 import CV from '../files/cv1.pdf'
@@ -15,13 +16,13 @@ const About = (props) => {
                 container
                 className={classes.content}>
                 <Grid item className={classes.aboutContainer}>
-                    <Typing
-                        hideCursor={true}
-                        speed={120}>
-                        <Typography className={classes.aboutWord}>
+                <Typography className={classes.aboutWord}>
+                        <Typist
+                        avgTypingDelay={200}
+                        cursor={{ show: false }}>
                             about.
-                        </Typography>
-                    </Typing>
+                        </Typist>
+                </Typography>
                     <hr className={classes.hr} />
                 </Grid>
                 <Grid item className={classes.aboutTextContainer}>

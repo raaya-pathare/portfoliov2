@@ -1,6 +1,6 @@
 import React from 'react'
 import { Grid, Typography, Slide } from '@material-ui/core'
-import Typing from 'react-typing-animation'
+import Typist from 'react-typist'
 
 import data from './images'
 import Slider from './Slider'
@@ -13,11 +13,12 @@ const Artwork = (props) => {
         <Grid container className={classes.root}>
             <Grid container className={classes.headingContainer}>
                 <Grid item>
-                    <Typing hideCursor={true} speed={120}>
-                    <Typography className={classes.heading}>
+                <Typography className={classes.heading}>
+                    <Typist avgTypingDelay={150}
+                        cursor={{ show: false }}>
                         artwork. 
-                    </Typography>
-                    </Typing>
+                    </Typist>
+                </Typography>
                 </Grid>
                 <hr className={classes.hr} />
             </Grid>

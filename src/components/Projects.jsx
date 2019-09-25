@@ -1,6 +1,6 @@
 import React from 'react'
 import { Grid, Typography, Slide } from '@material-ui/core'
-import Typing from 'react-typing-animation'
+import Typist from 'react-typist'
 import WB from './WB'
 import Untied from './Untied'
 import Aspire from './Aspire'
@@ -13,13 +13,13 @@ const Projects = (props) => {
     return (
         <Grid container className={classes.root}>
             <Grid item className={classes.headingContainer}>
-                <Typing
-                    hideCursor={true}
-                    speed={120}>
-                    <Typography className={classes.heading}>
+                <Typography className={classes.heading}>
+                    <Typist
+                    avgTypingDelay={110}
+                    cursor={{ show: false }}>
                         selected work.
-                    </Typography>
-                </Typing>
+                    </Typist>
+                </Typography>
                 <Typography className={classes.years}>
                     Selected projects /
                     <br />
