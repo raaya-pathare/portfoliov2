@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import Typing from 'react-typing-animation'
 import { Typography, Slide, Grid, Button, Icon, Tooltip, Fade } from '@material-ui/core'
 
-import CV from '../files/cv.pdf'
+import CV from '../files/cv1.pdf'
 import { AboutStyles } from '../style/muiStyles'
 
 const About = (props) => {
