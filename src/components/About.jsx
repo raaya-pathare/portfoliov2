@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-// import Typing from 'react-typing-animation'
 import Typist from 'react-typist'
 import { Typography, Slide, Grid, Button, Icon, Tooltip, Fade } from '@material-ui/core'
 
