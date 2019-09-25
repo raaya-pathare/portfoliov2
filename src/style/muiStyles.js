@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/styles'
 import { createMuiTheme } from '@material-ui/core/styles'
 
 import image from '../images/background1.jpg'
-import image2 from '../images/mountain.jpg'
+import image2 from '../images/aboutbackground1.jpg'
 import image3 from '../images/watchbetter.jpg'
 import image4 from '../images/untied.jpg'
 import image5 from '../images/aspire.jpg'
