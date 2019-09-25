@@ -13,16 +13,16 @@ const Projects = (props) => {
     return (
         <Grid container className={classes.root}>
             <Grid item className={classes.headingContainer}>
-                <Typography className={classes.heading}>
-                    <Typing
-                        hideCursor={true}
-                        speed={120}>
+                <Typing
+                    hideCursor={true}
+                    speed={120}>
+                    <Typography className={classes.heading}>
                         selected work.
-                    </Typing>
-                </Typography>
+                    </Typography>
+                </Typing>
                 <Typography className={classes.years}>
                     Selected projects /
-                    <br /> 
+                    <br />
                     2018 - 2019.
                 </Typography>
                 <hr className={classes.hr} />
@@ -30,8 +30,8 @@ const Projects = (props) => {
             <Grid item className={classes.dateContainer1}>
                 <Slide direction="left" in={true} timeout={1300} mountOnEnter unmountOnExit>
                     <Typography className={classes.date1}>
-                        <span style={{fontFamily: 'Sorts Mill Goudy, serif'}}>001.</span>
-                        <br/>
+                        <span style={{ fontFamily: 'Sorts Mill Goudy, serif' }}>001.</span>
+                        <br />
                         2019
                     </Typography>
                 </Slide>
@@ -40,10 +40,10 @@ const Projects = (props) => {
             <Grid item className={classes.dateContainer2}>
                 <Slide direction="right" in={true} timeout={1300} mountOnEnter unmountOnExit>
                     <Typography className={classes.date2}>
-                        <span style={{fontFamily: 'Sorts Mill Goudy, serif'}}>002.</span>
-                        <br/>
+                        <span style={{ fontFamily: 'Sorts Mill Goudy, serif' }}>002.</span>
+                        <br />
                         2018
-                        <br/>
+                        <br />
                         - 2019
                     </Typography>
                 </Slide>
@@ -52,8 +52,8 @@ const Projects = (props) => {
             <Grid item className={classes.dateContainer3}>
                 <Slide direction="left" in={true} timeout={1300} mountOnEnter unmountOnExit>
                     <Typography className={classes.date3}>
-                        <span style={{fontFamily: 'Sorts Mill Goudy, serif'}}>003.  </span>
-                        <br/>
+                        <span style={{ fontFamily: 'Sorts Mill Goudy, serif' }}>003.  </span>
+                        <br />
                         2019
                     </Typography>
                 </Slide>

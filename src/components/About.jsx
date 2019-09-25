@@ -16,14 +16,14 @@ const About = (props) => {
                 container
                 className={classes.content}>
                 <Grid item className={classes.aboutContainer}>
-                    <Typography className={classes.aboutWord}>
-                        <Typing
-                            hideCursor={true}
-                            speed={120}>
-                            <Typing.Delay ms={1300} />
+                    <Typing
+                        hideCursor={true}
+                        speed={120}>
+                        <Typing.Delay ms={1300} />
+                        <Typography className={classes.aboutWord}>
                             about.
-                        </Typing>
-                    </Typography>
+                        </Typography>
+                    </Typing>
                     <hr className={classes.hr} />
                 </Grid>
                 <Grid item className={classes.aboutTextContainer}>
@@ -44,8 +44,8 @@ const About = (props) => {
                                 placement="bottom"
                                 TransitionComponent={Fade}>
                                 <Icon className={classes.CVicon}>
-                                <a href={CV} rel="noopener noreferrer" target="_blank" className={classes.link}>
-                                arrow_downward
+                                    <a href={CV} rel="noopener noreferrer" target="_blank" className={classes.link}>
+                                        arrow_downward
                                 </a>
                                 </Icon>
                             </Tooltip>

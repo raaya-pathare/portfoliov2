@@ -180,11 +180,11 @@ class HigherOrderComponent extends React.Component {
                 <Grid container className={classes.root}>
                     <Grid container className={classes.content}>
                         <Grid item className={classes.headingContainer}>
-                            <Typography className={classes.heading}>
                                 <Typing hideCursor={true} speed={120}>
+                                <Typography className={classes.heading}>
                                     contact.
+                                </Typography>
                                 </Typing>
-                            </Typography>
                             <Typography className={classes.subheading}>
                                     If you have a question, want to ask about a project or just want to say hello, don't hesitate to reach out.
                             </Typography>
