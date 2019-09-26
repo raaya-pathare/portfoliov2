@@ -147,6 +147,9 @@ export const NavStyles = makeStyles(theme => ({
         [theme.breakpoints.up('lg')]: {
             fontSize: '1.1em'
         },
+        [`${theme.breakpoints.down('md')} and (orientation: portrait)`]: {
+            fontSize: '2em'
+        },
         textDecoration: 'none'
     },
     nameLink: {
@@ -256,7 +259,7 @@ export const AboutStyles = makeStyles(theme => ({
         ['@media only screen and (orientation: portrait)']: {
             fontSize: '2em',
             width: '70vw',
-            marginTop: '-180px',
+            marginTop: '-150px',
         },
         textAlign: 'justify',
         fontFamily: 'Sorts Mill Goudy, serif',
