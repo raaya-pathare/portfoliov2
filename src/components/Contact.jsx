@@ -16,6 +16,9 @@ const styles = theme => ({
         justifyContent: 'center',
         width: '35vw',
         marginTop: '3em',
+        [`${theme.breakpoints.down('md')} and (orientation: landscape)`]: {
+            marginTop: '8em'
+        }
     },
     textField: {
         width: '35vw',
@@ -25,7 +28,7 @@ const styles = theme => ({
         },
         '& :-webkit-autofill': {
             '-webkit-box-shadow': '0 0 0px 1000px #fafafa inset'
-          }
+        }
     },
     headingContainer: {
         display: 'flex',
