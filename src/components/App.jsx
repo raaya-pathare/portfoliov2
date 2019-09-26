@@ -10,6 +10,7 @@ import Contact from './Contact'
 import About from './About'
 import Projects from './Projects'
 import Artwork from './Artwork'
+import FooterIcons from './FooterIcons'
 
 const App = () => {
 
@@ -18,6 +19,7 @@ const App = () => {
           <CssBaseline />
             <Router>
                 <Route path="/" component={Nav} />
+                <Route path="/" component={FooterIcons} />
                 <Route exact path="/" component={Home} />
                 <Route exact path="/contact" component={Contact} />
                 <Route exact path="/about" component={About} />

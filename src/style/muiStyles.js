@@ -123,34 +123,6 @@ export const homeStyles = makeStyles(theme => ({
         left: '0.5%',
         height: '1em',
         lineHeight: '1em'
-    },
-    iconContainer: {
-        height: '50px',
-        display: 'flex',
-        width: '100vw',
-        [theme.breakpoints.down('md')]: {
-            marginBottom: '80px',
-            justifyContent: 'center'
-        },
-        ['@media only screen and (orientation: landscape)']: {
-            marginBottom: '20px',
-            justifyContent: 'flex-end',
-            marginRight: '4vw'
-        },
-        alignSelf: 'flex-end',
-    },
-    icon: {
-        height: '30px',
-        width: '30px',
-        [theme.breakpoints.down('md')]: {
-            height: '50px',
-            width: '50px',
-            marginRight: '15px',
-        },
-        ['@media only screen and (orientation: landscape)']: {
-            height: '30px',
-            width: '30px'
-        },
     }
 }))
 
@@ -249,41 +221,49 @@ export const AboutStyles = makeStyles(theme => ({
     content: {
         display: 'flex',
         justifyContent: 'center',
+        height: '80vh',
         width: '40vw',
         [`${theme.breakpoints.down('md')} and (orientation: landscape)`]: {
             width: '65vw',
-            marginTop: '9em'
         },
         marginTop: '6em',
         ['@media only screen and (orientation: portrait)']: {
-            marginTop: '20vh'
+            marginTop: '20vh',
+            width: '70vw'
         },
     },
-    aboutTextContainer: {
-        marginTop: '-20vh',
-        ['@media only screen and (orientation: portrait)']: {
-            width: '60vw'
-        },
+    aboutWord: {
+        fontFamily: 'Hammersmith One, sans-serif',
+        fontSize: '10em',
+        color: 'black',
+        height: '0.8em',
         [`${theme.breakpoints.down('md')} and (orientation: landscape)`]: {
-            width: '65vw'
+            height: '0px',
+            fontSize: '0px'
         },
-        height: '20%',
-        justifyContent: 'center',
+        letterSpacing: '-0.10em'
+    },
+    hr: {
+        border: '0.5px solid black',
+        height: '1px',
+        width: '100%',
+        marginTop: '-0.3em'
     },
     aboutText: {
         ['@media only screen and (orientation: landscape)']: {
             fontSize: '1.2em',
         },
         ['@media only screen and (orientation: portrait)']: {
-            fontSize: '1.8em',
-            width: '50vw'
+            fontSize: '2em',
+            width: '70vw',
+            marginTop: '-180px',
         },
         textAlign: 'justify',
         fontFamily: 'Sorts Mill Goudy, serif',
         letterSpacing: '-0.05em',
     },
     download: {
-        marginTop: '-17vh',
+        marginTop: '-10vh',
         [`${theme.breakpoints.down('md')} and (orientation: landscape)`]: {
             marginTop: '-7vh'
         },
@@ -308,32 +288,6 @@ export const AboutStyles = makeStyles(theme => ({
     contactLink: {
         textDecoration: 'none', 
         color: '#A100FF'
-    },
-    aboutContainer: {
-        display: 'flex',
-        flexDirection: 'column',
-        textAlign: 'center',
-        [`${theme.breakpoints.down('md')} and (orientation: landscape)`]: {
-            height: '0.1px',
-            width: '0.1px'
-        }
-    },
-    aboutWord: {
-        fontFamily: 'Hammersmith One, sans-serif',
-        fontSize: '10em',
-        color: 'black',
-        height: '1em',
-        [`${theme.breakpoints.down('md')} and (orientation: landscape)`]: {
-            height: '0px',
-            fontSize: '0px'
-        },
-        letterSpacing: '-0.10em'
-    },
-    hr: {
-        border: '0.5px solid black',
-        height: '1px',
-        width: '100%',
-        marginTop: '1.3em',
     }
 }))
 
@@ -811,5 +765,37 @@ export const sliderStyles = makeStyles(theme => ({
         fontSize: '1.2em',
         color: 'white',
         fontFamily: 'Sorts Mill Goudy, serif'
+    }
+}))
+
+export const FooterIconStyles = makeStyles(theme => ({
+    iconContainer: {
+        height: '50px',
+        position: 'fixed',
+        bottom: '0',
+        right: '0',
+        zIndex: '100',
+        [theme.breakpoints.down('md')]: {
+            marginBottom: '80px',
+        },
+        ['@media only screen and (orientation: landscape)']: {
+            marginBottom: '20px',
+            marginRight: '65px'
+        },
+        ['@media only screen and (orientation: portrait)']: {
+            right: '38%'
+        },
+    },
+    icon: {
+        height: '30px',
+        width: '30px',
+        [theme.breakpoints.down('md')]: {
+            height: '50px',
+            width: '50px',
+        },
+        ['@media only screen and (orientation: landscape)']: {
+            height: '30px',
+            width: '30px'
+        },
     }
 }))

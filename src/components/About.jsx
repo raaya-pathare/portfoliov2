@@ -14,27 +14,21 @@ const About = (props) => {
             <Grid
                 container
                 className={classes.content}>
-                <Grid item className={classes.aboutContainer}>
                 <Typography className={classes.aboutWord}>
                         <Typist
                         avgTypingDelay={200}
                         cursor={{ show: false }}>
                             about.
                         </Typist>
+                        <hr className={classes.hr} />
                 </Typography>
-                    <hr className={classes.hr} />
-                </Grid>
-                <Grid item className={classes.aboutTextContainer}>
-                    <Slide in={true} direction="up" timeout={1600}>
                         <Typography className={classes.aboutText}>
-                            "I'm passionate about well designed technology - if you are too, we'll get along.
-                            Web development allows me to be my most creative while also satisfying my desire to learn.
+                            "I'm passionate about well designed technology and its ability to make meaningful change - if you are too, let's talk.
+                            Web development allows me to be my most creative while also satisfying my desire to learn and thrive within one of the most dynamic industries today.
                             On the weekend you'll find me at an easel, with my dog at a far away beach, or scoping out the best dumpling joint in Auckland.
-                            If you need a little more detail download my CV below. Otherwise,  <Link className={classes.contactLink} to="/contact">get in touch.</Link>"
+                            If you need a little more detail download my CV or check out the links below. Otherwise,  <Link className={classes.contactLink} to="/contact">get in touch.</Link>"
                         </Typography>
-                    </Slide>
-                </Grid>
-                <Grid item className={classes.download}>
+                <div className={classes.download}>
                     <Slide in={true} direction="up" timeout={1300}>
                         <Button className={classes.downloadButton}>
                             <Tooltip
@@ -49,7 +43,7 @@ const About = (props) => {
                             </Tooltip>
                         </Button>
                     </Slide>
-                </Grid>
+                </div>
             </Grid>
         </Grid>
     )
