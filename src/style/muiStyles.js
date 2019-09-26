@@ -59,6 +59,7 @@ export const homeStyles = makeStyles(theme => ({
         flexDirection: 'column',
         width: '90vw',
         lineHeight: '1em'
+        
     },
     helloIm: {
         [theme.breakpoints.down('md')]: {
@@ -85,7 +86,8 @@ export const homeStyles = makeStyles(theme => ({
         color: '#A100FF',
         height: '1em',
         lineHeight: '1em',
-        marginLeft: '10px'
+        marginLeft: '10px',
+        textAlign: 'center'
     },
     firstLine: {
         [theme.breakpoints.down('md')]: {
@@ -107,7 +109,7 @@ export const homeStyles = makeStyles(theme => ({
         fontWeight: 400,
         letterSpacing: '-0.07em',
         height: '1em',
-        lineHeight: '1em'
+        lineHeight: '1em',
     },
     typedText: {
         fontFamily: 'Sorts Mill Goudy, serif',
@@ -115,14 +117,14 @@ export const homeStyles = makeStyles(theme => ({
             fontSize: '8vh'
         },
         ['@media only screen and (orientation: landscape)']: {
-            fontSize: '6vw'
+            fontSize: '8vw'
         },
         color: '#A100FF',
         marginTop: '0.25em',
         position: 'absolute',
         left: '0.5%',
         height: '1em',
-        lineHeight: '1em'
+        lineHeight: '1em',
     }
 }))
 
