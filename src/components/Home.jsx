@@ -28,11 +28,11 @@ const Home = (props) => {
                                     Web Developer.
                                     <Typist.Backspace count={14} delay={800} />
                                     <Typist.Delay ms={500} />
-                                    UI Designer.
-                                    <Typist.Backspace count={12} delay={800} />
+                                    Designer.
+                                    <Typist.Backspace count={9} delay={800} />
                                     <Typist.Delay ms={500} />
-                                    UX Designer.
-                                    <Typist.Backspace count={12} delay={800} />
+                                    Thinker.
+                                    <Typist.Backspace count={8} delay={800} />
                                     <Typist.Delay ms={500} />
                                     Creative.
                                 </Typist>
