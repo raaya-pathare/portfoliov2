@@ -21,7 +21,8 @@ const Home = (props) => {
                                 I am a
                             </Typography>
                             </Grid>
-                            <Grid item>
+                            <Grid item style={{ display: 'flex' }}>
+                            <hr className={classes.hr} />
                             <Typography className={classes.typedText}>
                                 <Typist
                                 cursor={{ hideWhenDone: true, hideWhenDoneDelay: 200 }}>

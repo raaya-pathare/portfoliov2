@@ -50,9 +50,9 @@ export const homeStyles = makeStyles(theme => ({
     },
     allTextBox: {
         position: 'absolute',
-        top: '25%',
+        top: '23%',
         [theme.breakpoints.down('md')]: {
-            top: '30%'
+            top: '28%'
         },
         left: '6%',
         display: 'flex',
@@ -111,6 +111,17 @@ export const homeStyles = makeStyles(theme => ({
         height: '1em',
         lineHeight: '1em',
     },
+    hr: {
+        borderTop: '6px solid #A100FF',
+        width: '80px',
+        ['@media only screen and (orientation: portrait)']: {
+            width: '10vw',
+            borderTop: '8px solid #A100FF',
+        },
+        position: 'absolute',
+        left: '1%',
+        marginTop: '2em',
+    },
     typedText: {
         fontFamily: 'Sorts Mill Goudy, serif',
         [theme.breakpoints.down('md')]: {
@@ -120,7 +131,7 @@ export const homeStyles = makeStyles(theme => ({
             fontSize: '8vw'
         },
         color: '#A100FF',
-        marginTop: '0.25em',
+        marginTop: '0.65em',
         position: 'absolute',
         left: '0.5%',
         height: '1em',
