@@ -42,9 +42,7 @@ const Projects = (props) => {
                     </Typography>
                 </Slide>
             </Grid>
-            {/* <Slide direction="up" in={true} timeout={1300} mountOnEnter unmountOnExit> */}
             <WB />
-            {/* </Slide> */}
             <Grid item className={classes.dateContainer2}>
                 <Slide direction="right" in={true} timeout={1300} mountOnEnter unmountOnExit>
                     <Typography className={classes.date2}>
