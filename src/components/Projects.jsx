@@ -20,11 +20,17 @@ const Projects = (props) => {
                         selected work.
                     </Typist>
                 </Typography>
+                <div className={classes.subheadings}>
                 <Typography className={classes.years}>
-                    Selected projects /
-                    <br />
-                    2018 - 2019.
+                    Selected projects / 2018 - 2019. Click the link on the right to my Github for more.
                 </Typography>
+                <Typography className={classes.githublink}>
+                <a 
+                style={{ color: 'black', textDecoration: 'none' }}href="www.github.com/raaya-pathare">
+                github.com/raaya-pathare
+                </a>
+                </Typography>
+                </div>
                 <hr className={classes.hr} />
             </Grid>
             <Grid item className={classes.dateContainer1}>
@@ -36,7 +42,9 @@ const Projects = (props) => {
                     </Typography>
                 </Slide>
             </Grid>
+            {/* <Slide direction="up" in={true} timeout={1300} mountOnEnter unmountOnExit> */}
             <WB />
+            {/* </Slide> */}
             <Grid item className={classes.dateContainer2}>
                 <Slide direction="right" in={true} timeout={1300} mountOnEnter unmountOnExit>
                     <Typography className={classes.date2}>

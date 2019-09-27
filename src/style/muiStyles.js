@@ -314,13 +314,7 @@ export const ProjectsStyles = makeStyles(theme => ({
         backgroundColor: 'white'
     },
     headingContainer: {
-        marginTop: '25vh',
-        ['@media only screen and (orientation: portrait)']: {
-            marginTop: '25vh'
-        },
-        [`${theme.breakpoints.down('md')} and (orientation: landscape)`]: {
-            marginTop: '30vh'
-        },
+        marginTop: '22vh',
         width: '100vw'
     },
     heading: {
@@ -340,20 +334,40 @@ export const ProjectsStyles = makeStyles(theme => ({
         textAlign: 'left',
         lineHeight: '0.7em',
     },
+    subheadings: {
+        width: '90vw',
+        display: 'flex',
+        justifyContent: 'space-between'
+    },
     years: {
         fontFamily: 'Hammersmith One, sans-serif',
         fontSize: '1em',
         ['@media only screen and (orientation: portrait)']: {
-            fontSize: '1.3em'
+            fontSize: '1.3em',
+            width: '20vw'
         },
         marginTop: '2vh',
         marginBottom: '2vh',
-        marginLeft: '11vw'
+        marginLeft: '11vw',
+        width: '10vw',
+        textAlign: 'justify',
+        lineHeight: '1em',
+        letterSpacing: '-0.05em'
+    },
+    githublink: {
+        fontFamily: 'Sorts Mill Goudy, serif',
+        fontSize: '1em',
+        ['@media only screen and (orientation: portrait)']: {
+            fontSize: '1.3em'
+        },
+        alignSelf: 'flex-end',
+        marginBottom: '1vh',
     },
     hr: {
         border: '0.5px solid black',
+        position: 'absolute',
         width: '100vw',
-        marginBottom: '4em'
+        zIndex: '10'
     },
     WBContainer: {
         display: 'flex',
@@ -369,6 +383,7 @@ export const ProjectsStyles = makeStyles(theme => ({
         ['@media only screen and (orientation: landscape)']: {
             height: '50vw',
         },
+        marginTop: '2em'
     },
     WBphoto: {
         backgroundImage: `url(${image3})`,
