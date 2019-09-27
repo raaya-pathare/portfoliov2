@@ -26,7 +26,7 @@ const Projects = (props) => {
                 </Typography>
                 <Typography className={classes.githublink}>
                 <a 
-                style={{ color: 'black', textDecoration: 'none' }}href="www.github.com/raaya-pathare">
+                style={{ color: 'black', textDecoration: 'none' }}href="https://github.com/raaya-pathare" target="_blank" rel="noopener noreferrer">
                 github.com/raaya-pathare
                 </a>
                 </Typography>
