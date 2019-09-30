@@ -8,7 +8,6 @@ import { artworkStyles } from '../style/muiStyles'
 
 const Artwork = (props) => {
     const classes = artworkStyles(props)
-
     return (
         <Grid container className={classes.root}>
             <Grid container className={classes.headingContainer}>
