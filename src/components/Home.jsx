@@ -5,7 +5,6 @@ import Typist from 'react-typist'
 
 const Home = (props) => {
     const classes = homeStyles(props)
-
     return (
             <>
                 <Grid container className={classes.background}>
