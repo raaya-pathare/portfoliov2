@@ -190,8 +190,11 @@ export const NavStyles = makeStyles(theme => ({
             flexDirection: 'row',
             width: '60vw'
         },
-        marginTop: '4px',
-        justifyContent: 'space-between',
+        ['@media only screen and (orientation: portrait)']: {
+            marginLeft: '8vw'
+        },
+        marginTop: '5px',
+        justifyContent: 'space-evenly',
     },
     menuItem: {
         fontFamily: 'Sorts Mill Goudy, serif',

@@ -25,7 +25,7 @@ const Nav = (props) => {
       }}
       transformOrigin={{
         vertical: 'bottom',
-        horizontal: 'right',
+        horizontal: 'left',
       }}
       {...props}
     />
@@ -45,12 +45,6 @@ const Nav = (props) => {
     <>
       <div style={{ display: 'flex', justifyContent: 'center' }}>
         <Container maxWidth={false} className={classes.root}>
-        <Slide in={true} direction="right" timeout={1300}>
-          <div>
-            <Typography className={classes.name}><Link to="/" className={classes.nameLink}>raaya pathare</Link>
-            </Typography>
-          </div>
-        </Slide>
         <Slide in={true} direction="right" timeout={1200}>
           <Box>
             <Button
@@ -71,27 +65,27 @@ const Nav = (props) => {
                 <Grow
                   in={pressed}
                   style={{ transformOrigin: '0 0 0' }}
-                  {...(pressed ? { timeout: 1800 } : {})}>
+                  {...(pressed ? { timeout: 500 } : {})}>
                   <Button onClick={handleClose} className={classes.menuItem}><Link to="/about" className={classes.link}>about</Link></Button>
-                </Grow>
-                <Grow
-                  in={pressed}
-                  style={{ transformOrigin: '0 0 0' }}
-                  {...(pressed ? { timeout: 1500 } : {})}
-                >
-                  <Button onClick={handleClose} className={classes.menuItem}><Link to="/projects" className={classes.link}>Selected Work</Link></Button>
                 </Grow>
                 <Grow
                   in={pressed}
                   style={{ transformOrigin: '0 0 0' }}
                   {...(pressed ? { timeout: 1000 } : {})}
                 >
+                  <Button onClick={handleClose} className={classes.menuItem}><Link to="/projects" className={classes.link}>Selected Work</Link></Button>
+                </Grow>
+                <Grow
+                  in={pressed}
+                  style={{ transformOrigin: '0 0 0' }}
+                  {...(pressed ? { timeout: 1500 } : {})}
+                >
                   <Button onClick={handleClose} className={classes.menuItem}><Link to="/artwork" className={classes.link}>Artwork</Link></Button>
                 </Grow>
                 <Grow
                   in={pressed}
                   style={{ transformOrigin: '0 0 0' }}
-                  {...(pressed ? { timeout: 500 } : {})}
+                  {...(pressed ? { timeout: 1800 } : {})}
                 >
                   <Button onClick={handleClose} className={classes.menuItem}><Link to="/contact" className={classes.link}>Contact</Link></Button>
                 </Grow>
@@ -99,6 +93,12 @@ const Nav = (props) => {
             </StyledMenu>
           </Box>
           </Slide>
+          <Slide in={true} direction="right" timeout={1300}>
+          <div>
+            <Typography className={classes.name}><Link to="/" className={classes.nameLink}>raaya pathare</Link>
+            </Typography>
+          </div>
+        </Slide>
         </Container>
       </div>
     </>
