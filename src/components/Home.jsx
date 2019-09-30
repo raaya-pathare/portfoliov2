@@ -1,5 +1,5 @@
 import React from 'react'
-import { Typography, Grid } from '@material-ui/core'
+import { Typography, Grid, Fade } from '@material-ui/core'
 import { homeStyles } from '../style/muiStyles'
 import Typist from 'react-typist'
 
@@ -8,6 +8,7 @@ const Home = (props) => {
     return (
             <>
                 <Grid container className={classes.background}>
+                        <Fade in={true} direction="right" timeout={1500}>
                         <Grid container className={classes.allTextBox}>
                             <Grid item className={classes.firstLine}>
                                 <Typography className={classes.helloIm}>
@@ -39,6 +40,7 @@ const Home = (props) => {
                             </Typography>
                             </Grid>
                         </Grid>
+                        </Fade>
                 </Grid>
             </>
         )
