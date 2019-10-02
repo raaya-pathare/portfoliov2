@@ -633,12 +633,12 @@ export const ProjectsStyles = makeStyles(theme => ({
             },
         },
         backgroundRepeat: 'no-repeat',
-        backgroundSize: '30em 53em',
+        backgroundSize: '25em 50em',
         [`${theme.breakpoints.down('md')} and (orientation: landscape)`]: {
-            backgroundSize: '77% 95%'
+            backgroundSize: '70% 90%'
         },
         backgroundPosition: 'center center',
-        width: '45%',
+        width: '40%',
         ['@media only screen and (orientation: portrait)']: {
             width: '57%'
         },
