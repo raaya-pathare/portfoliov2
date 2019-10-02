@@ -467,7 +467,7 @@ export const ProjectsStyles = makeStyles(theme => ({
         fontSize: '1.2em',
         color: '#A100FF',
         textAlign: 'right',
-        marginLeft: '4vw'
+        marginLeft: '6vw'
     },
     dateContainer3: {
         display: 'flex',
@@ -561,26 +561,26 @@ export const ProjectsStyles = makeStyles(theme => ({
         ['@media only screen and (orientation: portrait)']: {
             width: '65%',
             height: '57%',
-            transform: 'translate(165px, 600px)',
+            transform: 'translate(165px, 550px)',
             overflow: 'scroll'
         },
         width: '20%',
         height: '70%',
         [theme.breakpoints.up('lg')]: {
-            transform: 'translate(140px, 200px)',
+            transform: 'translate(210px, 200px)',
             height: '52%',
             overflow: 'scroll'
         },
         [`${theme.breakpoints.down('md')} and (orientation: landscape)`]: {
             overflow: 'scroll',
             width: '25%',
-            transform: 'translate(80px, 90px)'
+            transform: 'translate(110px, 70px)'
         },
         padding: '30px'
     },
     untiedPhoto: {
         width: '80%',
-        height: '95%',
+        height: '100%',
         [theme.breakpoints.down('lg')]: {
             alignSelf: 'center',
         },
@@ -592,7 +592,7 @@ export const ProjectsStyles = makeStyles(theme => ({
         },
         backgroundImage: `url(${image4})`,
         backgroundRepeat: 'no-repeat',
-        backgroundSize: '93% 93%',
+        backgroundSize: '100% 100%',
         backgroundPosition: 'center bottom',
         [theme.breakpoints.down('md')]: {
             width: '75%'
@@ -601,12 +601,9 @@ export const ProjectsStyles = makeStyles(theme => ({
             height: '70%',
             width: '100%'
         },
-        [`${theme.breakpoints.down('md')} and (orientation: landscape)`]: {
-            height: '90%',
-        },
         [`${theme.breakpoints.down('md')} and (orientation: portrait)`]: {
             transform: 'translateY(-40vw)',
-        },
+        }
     },
     aspireContainer: {
         display: 'flex',
